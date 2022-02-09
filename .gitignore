@@ -1,0 +1,7 @@
+.next
+node_modules
+out
+.vscode
+extension/html
+web-ext-artifacts
+.DS_store

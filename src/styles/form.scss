@@ -1,0 +1,87 @@
+.formField {
+  margin-bottom: 1rem;
+}
+
+.positionBtn {
+  background: none;
+  border: 1.5px solid var(--secondary);
+  width: 100%;
+
+  margin-top: 0.8em;
+
+  color: var(--secondary);
+  padding: 0.5em;
+  border-radius: 0.3em;
+  cursor: pointer;
+
+  transition: 200ms;
+
+  &:hover:enabled,
+  &.selected {
+    color: var(--primary);
+    background: var(--secondary);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.toggle {
+    border-radius: 0;
+
+    width: 100px !important;
+    margin-left: 1px;
+
+    &:first-child {
+      border-top-left-radius: 0.3em;
+      border-bottom-left-radius: 0.3em;
+    }
+
+    &:last-child {
+      border-top-right-radius: 0.3em;
+      border-bottom-right-radius: 0.3em;
+    }
+  }
+}
+
+.formInput {
+  margin-top: 0.5em;
+
+  width: 100%;
+  padding: 0.5em 0.8em;
+
+  font-size: 1rem;
+  color: var(--secondary);
+
+  border: 1.5px solid var(--secondary);
+  border-radius: 0.3em;
+  background: var(--primary);
+
+  transition: 200ms;
+
+  &::placeholder {
+    color: #696969;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.formSpan {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.fieldSet {
+  border: none;
+  transition: opacity 200ms;
+
+  &:disabled {
+    opacity: 0.2;
+    user-select: none;
+  }
+}

@@ -1,0 +1,90 @@
+.settingsBtn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+
+  display: grid;
+  place-items: center;
+
+  transition: 200ms;
+
+  background: none;
+  padding: 1em;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--hover);
+  }
+}
+
+.topRightContainer {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+}
+
+.bottomRightContainer {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.bottomLeftContainer {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+
+  h1,
+  h2 {
+    text-align: start;
+  }
+}
+
+/** h1 */
+.greetingText {
+  font-size: 4em;
+  text-align: end;
+  user-select: none;
+}
+
+/** h2 */
+.timeText {
+  font-size: 3em;
+  text-align: end;
+  user-select: none;
+
+  span {
+    font-size: 0.8em;
+  }
+}
+
+.weatherText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.modalResponsive {
+  padding: 1rem;
+  border-radius: 0.45rem;
+  overflow: hidden;
+  border: 1.5px solid var(--secondary);
+
+  @media (max-height: 500px) {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    height: 95% !important;
+  }
+}
+
+.backgroundImg {
+  position: fixed;
+  inset: 0;
+
+  transition: opacity 200ms;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
